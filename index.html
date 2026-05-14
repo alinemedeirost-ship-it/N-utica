@@ -11,7 +11,6 @@
 
 <body>
 
-    <!-- Menu de Navegação -->
     <header>
         <nav>
             <div class="logo">
@@ -19,24 +18,25 @@
                 <span class="logo-texto">Costa Verde <span>Náutica</span></span>
             </div>
             <ul>
-                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#servicos" class="btn-nav">Serviços</a></li>
                 <li><a href="#contato" class="btn-nav">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Seção Principal (Hero) com Imagem de Fundo -->
     <section class="hero">
-        <!-- O vídeo deve ser a primeira coisa dentro da section -->
         <video autoplay muted loop playsinline poster="img/fundo.jpg" class="video-fundo">
             <source src="img/fundo.mp4" type="video/mp4">
         </video>
 
-        <h1>Navegue com exclusividade pela Costa Verde.</h1>
-        <p>Venda, aluguel e gestão de embarcações com quem entende do mar.</p>
-        <a href="#servicos" class="btn-principal">Conhecer Serviços</a>
+        <div class="hero-conteudo">
+            <h1>Navegue com exclusividade pela Costa Verde.</h1>
+            <p>Embarcações de alta performance para experiências inesquecíveis, com toda segurança e conforto que você
+                merece!</p>
+            <a href="#servicos" class="btn-principal">Conhecer Serviços</a>
+        </div>
     </section>
-    <!-- Seção Quem Somos -->
+
     <section id="sobre" class="sobre">
         <div class="container-sobre">
             <div class="sobre-img">
@@ -56,17 +56,15 @@
             </div>
         </div>
     </section>
-    <!-- Seção de Serviços -->
+
     <section id="servicos" class="servicos">
         <h2>Nossos Serviços</h2>
         <div class="grid-servicos">
-
             <div class="card">
-                <img src="img/card1.jpg" alt="Venda de Lanchas">
+                <img src="img/card1.jpg" alt="Venda de Embarcações">
                 <div class="card-info">
                     <h3>Venda e Aluguel</h3>
                     <p>A melhor frota da região para você navegar com conforto e segurança.</p>
-                    <a href="#" class="btn-card">Saiba Mais</a>
                 </div>
             </div>
 
@@ -74,8 +72,7 @@
                 <img src="img/card2.jpg" alt="Comemorações">
                 <div class="card-info">
                     <h3>Comemorações</h3>
-                    <p>Venha comemorar em nossas embracações, essa data tão especial.</p>
-                    <a href="#" class="btn-card">Saiba Mais</a>
+                    <p>Venha comemorar em nossas embarcações, essa data tão especial.</p>
                 </div>
             </div>
 
@@ -84,27 +81,34 @@
                 <div class="card-info">
                     <h3>Passeios</h3>
                     <p>Roteiros personalizados pelas ilhas mais paradisíacas da região.</p>
-                    <a href="#" class="btn-card">Saiba Mais</a>
                 </div>
             </div>
-
         </div>
     </section>
-    <!-- Seção Contato -->
+
     <section id="contato" class="contato">
         <div class="container-contato">
+
             <div class="contato-info">
                 <h2>Entre em Contato</h2>
-                <p>Tem alguma dúvida ou deseja agendar uma visita? Nossa equipe está pronta para atender você.</p>
+                <p>Clique em um dos canais abaixo para falar conosco, ou preencha o formulário.</p>
 
-                <div class="info-item">
-                    <p><strong>📍 Localização:</strong> Angra dos Reis, RJ - Costa Verde</p>
-                </div>
-                <div class="info-item">
-                    <p><strong>📧 E-mail:</strong> contato@costaverdenautica.com.br</p>
-                </div>
-                <div class="info-item">
-                    <p><strong>⏰ Horário:</strong> Seg a Sáb: 09:00 - 18:00</p>
+                <div class="lista-contato-botoes">
+                    <a href="https://maps.google.com" target="_blank" class="btn-contato-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Angra dos Reis, RJ - Costa Verde</span>
+                    </a>
+
+                    <a href="mailto:contato@costaverdenautica.com.br" class="btn-contato-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>contato@costaverdenautica.com.br</span>
+                    </a>
+
+                    <a href="https://www.instagram.com/costaverdenauticaoficial" target="_blank"
+                        class="btn-contato-item">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>@costaverdenauticaoficial</span>
+                    </a>
                 </div>
             </div>
 
@@ -117,10 +121,11 @@
                     <button type="submit" class="btn-enviar">Enviar Mensagem</button>
                 </form>
             </div>
+
         </div>
     </section>
-    <!-- Rodapé (Footer) - Movido para dentro do Body -->
-    <footer id="contato">
+
+    <footer>
         <div class="footer-container">
             <div class="footer-col">
                 <div class="logo-texto">Costa Verde <span style="color: #2a9d8f;">Náutica</span></div>
@@ -139,19 +144,19 @@
             <div class="footer-col">
                 <h4>Contato</h4>
                 <p>📍 Angra dos Reis, RJ</p>
-                <p>📞 (21) 965049202</p>
+                <p>📞 (21) 96504-9202</p>
                 <p>📧 contato@costaverdenautica.com.br</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Costa Verde Náutica - Todos os direitos reservados.</p>
+            <p>© 2026 Costa Verde Náutica - Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <!-- Botão Flutuante do WhatsApp -->
     <a href="https://wa.me/5521965049202" class="whatsapp-float" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
     </a>
+
 </body>
 
 </html>
